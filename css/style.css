@@ -58,7 +58,7 @@ br.clear {
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
-	max-width:1080px;
+	max-width:1400px;
 }
 h3 {
     color: var(--main-color--);
@@ -119,6 +119,42 @@ h3 {
 
 ::-ms-input-placeholder {
   color: #C0CCDA;
+}
+@keyframes change-text {
+    0% {
+        content: "";
+        opacity: 0;
+        transition: 4s;
+    }
+    25%{
+        content: "Marvel Sann";
+        opacity: 1;
+        transition: 3s;
+    }
+    45%{
+        content: "";
+        opacity: 0;
+    }
+    65%{
+        content:"Web Designer";
+        opacity: 1;
+        transition: 2s;
+    }
+    75%{
+        content:"";
+        opacity: 0;
+        transition: 3s;
+    }
+    95%{
+        content:"UI Specialist";
+        opacity: 1;
+        transition: 3s;
+    }
+    100%{
+        content:"";
+        opacity: 0;
+        transition: 5s;
+    }
 }
 
 header { 
@@ -349,7 +385,7 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
     font-size: 15px;
     font-weight: 700;
     color: #5f5e5e;
-    margin-left: 15px;
+    padding-left: 15px;
     margin-bottom: 30px;
 }
 #spotlight div.left h1 { 
@@ -367,48 +403,11 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
 }
 #spotlight div.left div span::before {
     content: "";
-    animation: change-text infinite 3s;
+    animation: change-text infinite 5s;
     color: #f8c246;
     font-size: 42px;
     font-weight: 700;
     margin-left: 10px;
-}
-@keyframes change-text {
-    0% {
-        content: "";
-        transition: 5s ease-in-out;
-        opacity: 0;
-    }
-    25%{
-        content: "Marvel Sann";
-        opacity: 1;
-        transition: 5s ease;
-    }
-    45%{
-        content: "";
-        transition: .3s;
-        opacity: 0;
-    }
-    55%{
-        content:"Web Designer";
-        transition: 5s ease-in-out;
-        opacity: 1;
-    }
-    75%{
-        content:"";
-        transition: 5s ease-in-out;
-        opacity: 0;
-    }
-    85%{
-        content:"UI Specialist";
-        transition: 4s ease-in-out;
-        opacity: 1;
-    }
-    100%{
-        content:"";
-        transition: 4s ease-in-out;
-        opacity: 0;
-    }
 }
 #spotlight div.left p { 
     font-size: 18px;
@@ -497,6 +496,9 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
     margin-right: 10px;
     cursor: pointer;
 }
+#projects div.bottom ul li:last-child { 
+    margin-right: 0;
+}
 #projects div.bottom ul li i.fas.fa-circle { 
     font-size: 8px;
     color: #8d8a8a;
@@ -524,6 +526,9 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
     margin-bottom: 60px;
     display: flex;
     align-items: center;
+}
+#resume div.left div.item:last-child { 
+    margin-bottom: 0;
 }
 #resume div.left div.item div.left-content { 
 
@@ -582,6 +587,9 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
     margin-bottom: 60px;
     display: flex;
     align-items: center;
+}
+#resume div.right div.item:last-child { 
+    margin-bottom: 0;
 }
 #resume div.right div.item div.left-content { 
 
@@ -843,6 +851,128 @@ footer span a:hover {
 
 /* responsive design */
 
+@media all and (max-width:1970px){
+    header {
+        height: 100px;
+    }
+    #spotlight {
+        padding: 152px 0px 257px;
+    }
+    #spotlight div.left h6 {
+        font-size: 21px;
+        margin-bottom: 37px;
+    }
+    #spotlight div.left h1 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    #spotlight div.left div span::before {
+        font-size: 48px;
+    }
+    #spotlight div.right div.image-container {
+        width: 98%;
+    }
+    #spotlight div.left p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    #spotlight div.left a.button {
+        padding: 24px 58px;
+    }
+    #projects div.top h3 {
+        font-size: 44px;
+        max-width: 673px;
+    }
+    #projects {
+        padding: 0 10px 133px;
+    }
+    #resume {
+        padding-bottom: 200px;
+    }
+    #resume div.left h3 {
+        font-size: 45px;
+    }
+    #resume div.right h3 {
+        font-size: 45px;
+    }
+    #resume div.left div.item div.right-content h4 {
+        font-size: 32px;
+    }
+    #resume div.left div.item div.right-content p {
+        font-size: 18px;
+    }
+    #resume div.left div.item div.left-content span {
+        padding: 38px 31px;
+    }
+    #resume div.right div.item div.left-content span {
+        padding: 38px 31px;
+    }
+    #contact {
+        padding-bottom: 180px;
+    }
+}
+@media all and (max-width:1400px){  
+    #spotlight {
+        padding: 80px 0px 150px;
+    }
+    #spotlight div.right div.image-container {
+        width: 87%;
+    }
+    #spotlight div.left h1 {
+        font-size: 43px;
+        margin-bottom: 20px;
+    }
+    #spotlight div.left h6 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #spotlight div.left p {
+        font-size: 17px;
+        margin-bottom: 30px
+    }
+    #spotlight div.left a.button {
+        padding: 12px 30px;
+    }
+    #projects div.top h3 {
+        font-size: 31px;
+    }
+    #projects div.middle div.image-container {
+        width: 67%;
+    }
+    #resume div.left h3 {
+        font-size: 36px;
+    }
+    #resume div.right h3 {
+        font-size: 36px;
+    }
+    #resume div.left div.item div.right-content h4 {
+        font-size: 26px;
+    }
+    #resume div.right div.item div.right-content h4 {
+        font-size: 26px;
+    }
+    #resume div.left div.item div.right-content p {
+        font-size: 16px;
+    }
+    #resume div.right div.item div.right-content p {
+        font-size: 16px;
+    }
+    #resume div.left div.item div.left-content span {
+        padding: 23px 18px;
+    }
+    #resume div.left div.item {
+        margin-bottom: 30px;
+    }
+    #resume div.right div.item {
+        margin-bottom: 30px;
+    }
+    #resume {
+        padding-bottom: 100px;
+    }
+    #contact {
+        padding-bottom: 140px;
+    }
+}
 @media all and (max-width:1280px){  
     #spotlight div.left h1 {
         font-size: 35px;
