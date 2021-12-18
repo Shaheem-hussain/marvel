@@ -960,6 +960,12 @@ footer span a:hover {
     #resume div.left div.item div.left-content span {
         padding: 23px 18px;
     }
+    #resume div.right div.item div.left-content span {
+        padding: 23px 18px;
+    }
+    #resume div.right div.item div.left-content span::after {
+        height: 150px;
+    }
     #resume div.left div.item {
         margin-bottom: 30px;
     }
