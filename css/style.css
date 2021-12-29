@@ -479,10 +479,10 @@ header div.right nav#mobile-menu ul li a div.clr-mode span {
 #projects div.middle i.fas:hover { 
     color: #ffc107;
 }
-#projects div.middle div.image-container { 
+#projects div.middle div.item { 
     width: 80%;
 }
-#projects div.middle div.image-container img { 
+#projects div.middle div.item img { 
     width: 100%;
     display: block;
 }
